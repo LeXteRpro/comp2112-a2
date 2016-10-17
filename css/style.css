@@ -1,9 +1,197 @@
-.container {
+.h1, h1 {
+	all: none;
+	font-size: 5em;
+}
+
+h2 {
+	font-weight: 700;
+}
+label {
+	font-size: 1.4em;
+	font-family: Georgia, serif;
+	font-weight: 100;
+	line-height: 35px;
+}
+
+input[type="checkbox"]{
+  width: 25px; /*Desired width*/
+  height: 25px; /*Desired height*/
+}
+
+
+/* Question Sections */
+section {
+	border-bottom: 1px solid lightgray;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+body {
+	margin-top: 50px;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+
+/* Title Page Styling */
+
+.title-page {
+	text-align: center;
+}
+
+
+.title-page h1 {
+	font-size: 3.5em;
+}
+
+.title-page h2 {
+	font-size: 2.5em;
+}
+
+
+.title-page span {
+	font-size: 1em;
+	font-weight: 100;
+}
+
+/* Button Center */
+.button-wrapper {
+  background-image:
+        -webkit-gradient(
+            radial, 
+            50% -50, 
+            300, 
+            50% 0, 
+            0, 
+            from(rgba(230, 237, 241, 0)), 
+            to(rgba(230, 237, 241, 0.8)));
+    
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.button {
+	background-color: lightgray;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 3em;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	width: 100%;
+    -webkit-border-radius: 10px;
+    -webkit-box-shadow: 
+        0px 3px rgba(128,128,128,1), /* gradient effects */
+        0px 4px rgba(118,118,118,1),
+        0px 5px rgba(108,108,108,1),
+        0px 6px rgba(98,98,98,1),
+        0px 7px rgba(88,88,88,1),
+        0px 8px rgba(78,78,78,1),
+        0px 14px 6px -1px rgba(128,128,128,1); /* shadow */
+    -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+
+}
+
+.button-wrapper a {
+	text-decoration: none;
+}
+
+/* The Chart Styling */
+.chart-container {
   width: 40%;
 }
 
+/* Paragraph Elements */
 .p {
   text-align: center;
   font-size: 14px;
   padding-top: 140px;
+}
+
+
+.submit-wrapper {
+	background-color: red;
+	position: fixed;
+}
+
+/* Submit Button Styling */
+#submit {
+	width: 75%;
+	padding: 15px;
+	margin: 20px auto;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+    font-size: 1.5em;
+}
+
+
+
+#submit:hover {
+    background: #e9ebec;
+}
+
+#submit.show {
+    opacity: 1;
+}
+
+#modify-chart {
+	display: none;
+	padding: 15px;
+	margin: 20px auto;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 3em;
+	position: fixed;
+	margin-top: 300px;
+	margin-left: 100px;
+	z-index: 99;
+	text-decoration: none;
+	background-color:rgba(40,40,40, 0.1);
+	border-radius: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+/* Single question Styling */
+.questions {
+	margin-bottom: 5px;
+}
+
+/* Section Every other Styling */
+.questions:nth-child(odd){
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: lightgray;
+}
+
+
+.book {
+	width: 10%;
+}
+
+/* Footer Styles */
+.footer-wrapper {
+    background-color: #222;
+    border-color: #080808;
+    padding: 15px;
+    height: 50px;
+    margin-top: 75px;
+}
+
+.footer-wrapper p {
+    color: #fff;
+    float: right;
+    padding-right: 25px;
 }
